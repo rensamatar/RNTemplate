@@ -1,0 +1,35 @@
+{
+  "env": {
+    "jest": true
+  },
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["react-native", "prettier", "react"],
+  "rules": {
+    "global-require": 0,
+    "no-underscore-dangle": 0,
+    "no-undef": 0,
+    "no-unused-vars": 0,
+    "no-alert": 0,
+    "no-console": 0,
+    "comma-dangle": 0,
+    "no-var": 1,
+    "no-warning-comments": 0,
+    "new-cap": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-no-bind": 0,
+    "react/no-string-refs": 0,
+    "react/forbid-prop-types": 0,
+    "class-methods-use-this": 0,
+    "react/require-default-props": 0,
+    "prettier/prettier": "error"
+  }
+}
