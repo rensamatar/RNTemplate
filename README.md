@@ -63,7 +63,9 @@ Current project template using `React ^16.3.1` and `React-native ^0.55.4`
 ├── ***
 ├── src
 │   ├── actions
-│   │   └── index.js
+│   │     └── index.js
+│   ├── api
+│   │     └── index.js
 │   ├── assets
 │   │     ├── *.png
 │   │     └── *.jpg
