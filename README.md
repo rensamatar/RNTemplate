@@ -22,7 +22,7 @@ To install all default dependencies then open `app.json` file to edit or remove 
 
 app.json
 
-```json
+```js
 {
   // key `name` will relate to package name or bundle id.
   // key `displayName` will show as app name.
@@ -55,14 +55,12 @@ For Android you should add permission to manifest file then the app can check ne
 
 ## Dependencies
 
-Current project template using `React ^16.0.0` and `React-native ^0.49.3`
+Current project template using `React ^16.3.1` and `React-native ^0.55.4`
 
 ## Structure
 
 ```bash
-├── ios
-├── android
-├── __tests__
+├── ***
 ├── src
 │   ├── actions
 │   │   └── index.js
@@ -111,7 +109,6 @@ Current project template using `React ^16.0.0` and `React-native ^0.49.3`
 - You can config your endpoint in `/src/config/index.js`
 - You can create own components in `components` folder
 - You can add json translation file to `locale` folder and add it in `index.js` too.
-- In `lib` folder contains the class for call API.
 
 You can run the prject with default command to start the application.
 
