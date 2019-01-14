@@ -1,4 +1,4 @@
-import { Dimensions, Platform, Share } from 'react-native'
+import { Dimensions, Platform } from 'react-native'
 import { dark, light } from '../styles'
 
 const width = Dimensions.get('window').width
@@ -36,7 +36,7 @@ export function ifAndroid(androidStyle, regularStyle) {
 
 const isFunction = input => typeof input === 'function'
 export function renderIf(predicate) {
-  return function (elemOrThunk) {
+  return function(elemOrThunk) {
     return predicate
       ? isFunction(elemOrThunk)
         ? elemOrThunk()
@@ -46,15 +46,18 @@ export function renderIf(predicate) {
 }
 
 export function checkTheme(theme) {
-  return {
-    backgroundColor: theme === 'dark' ? dark.secondaryColor : light.background
-  }
+  return theme === 'dark' ? dark.backgroundColor : light.backgroundColor
 }
 
 export function guid() {
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
     var r = (Math.random() * 16) | 0,
       v = c == 'x' ? r : (r & 0x3) | 0x8
     return v.toString(16)
   })
+}
+
+export function validateEmail(email) {
+  let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+  return reg.test(email)
 }

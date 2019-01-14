@@ -4,5 +4,7 @@ export default {
   primaryColor: '#783F8E',
   secondaryColor: '#2A2D3E',
   textColor: '#FDFEFE',
-  background: '#232632'
+  backgroundColor: '#232632',
+  borderColor: '#eeeeee',
+  inputColor: 'rgba(225,225,225,0.2)'
 }

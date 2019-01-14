@@ -1,11 +1,23 @@
 import React, { Component } from 'react'
-import { View } from 'react-native'
+import { View, Text } from 'react-native'
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
+import { Container } from '../components'
+import { dark, light } from '../styles'
 
 class Home extends Component {
   render() {
-    return <View />
+    return (
+      <Container
+        backgroundColor={
+          this.props.theme === 'dark' ? dark.secondaryColor : light.background
+        }
+      >
+        <View>
+          <Text>Welcome home :)</Text>
+        </View>
+      </Container>
+    )
   }
 }
 
